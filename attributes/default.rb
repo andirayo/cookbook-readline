@@ -22,4 +22,7 @@ when "redhat","centos","scientific","amazon", "fedora"
   default['readline']['packages'] = [ "readline", "readline-devel" ]
 when "debian","ubuntu"
   default['readline']['packages'] = [ "libreadline-dev", "libreadline5" ]
+when "mac_os_x"
+  default['readline']['packages'] = [ "readline" ]
 end
+
